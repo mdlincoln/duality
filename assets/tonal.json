@@ -1,0 +1,205 @@
+[
+  {
+    "name": "question.Why did Dutch painters turn towards tonal painting in the 1620s?",
+    "imports": [
+      "shift.What constitutes a shift?",
+      "tonal.Is tonal painting a valid category?",
+      "causes.What are the potential causes?",
+      "shift.If a shfit occurred, did it happen in the 1620s?"
+    ]
+  },
+  {
+    "name": "tonal.Is tonal painting a valid category?",
+    "imports": [
+      "tonal.What are the components of tonalism?"
+    ]
+  },
+  {
+    "name": "tonal.What are the components of tonalism?",
+    "imports": [
+      "tonal.Limited palette",
+      "tonal.Thin paint application",
+      "tonal.Cheap materials",
+      "tonal.Simple composition"
+    ]
+  },
+  {
+    "name": "tonal.Simple composition",
+    "imports": [
+      "data.Mark with a colloquial scale",
+      "tonal.Measure with image entropy algorithms"
+    ]
+  },
+  {
+    "name": "tonal.Measure with image entropy algorithms",
+    "imports": [
+      "data.Do available sources support this evaluation?"
+    ]
+  },
+  {
+    "name": "tonal.Limited palette",
+    "imports": [
+      "tonal.Measure hue distribution in digital images of paintings",
+      "data.Mark with a colloquial scale"
+    ]
+  },
+  {
+    "name": "data.Do existing ontologies match with our own model?",
+    "imports": []
+  },
+  {
+    "name": "data.Are there systematic deviations from the historical reality?",
+    "imports": []
+  },
+  {
+    "name": "data.Mark with a colloquial scale",
+    "imports": [
+      "data.Do other researchers come to the same conclusions?"
+    ]
+  },
+  {
+    "name": "data.Do other researchers come to the same conclusions?",
+    "imports": []
+  },
+  {
+    "name": "tonal.Measure hue distribution in digital images of paintings",
+    "imports": [
+      "data.Do available sources support this evaluation?"
+    ]
+  },
+  {
+    "name": "data.Do available sources support this evaluation?",
+    "imports": [
+      "data.Are there systematic deviations from the historical reality?",
+      "data.Do existing ontologies match with our own model?"
+    ]
+  },
+  {
+    "name": "data.Do available sources support this evaluation?",
+    "imports": []
+  },
+  {
+    "name": "tonal.Thin paint application",
+    "imports": [
+      "data.Mark with a colloquial scale",
+      "tonal.Measure thickness of paint layer systematically"
+    ]
+  },
+  {
+    "name": "tonal.Measure thickness of paint layer systematically",
+    "imports": [
+      "data.Do available sources support this evaluation?"
+    ]
+  },
+  {
+    "name": "tonal.Cheap materials",
+    "imports": [
+      "tonal.Aggregate conservation information"
+    ]
+  },
+  {
+    "name": "tonal.Aggregate conservation information",
+    "imports": [
+      "data.Do available sources support this evaluation?"
+    ]
+  },
+  {
+    "name": "shift.What constitutes a shift?",
+    "imports": [
+      "shift.Some significant increase seen within a particular period of time?",
+      "shift.If a shfit occurred, did it happen in the 1620s?"
+    ]
+  },
+  {
+    "name": "shift.Some significant increase seen within a particular period of time?",
+    "imports": [
+      "shift.Increase in number of paintings with these attributes?",
+      "shift.Increase in number of artists making these works?"
+    ]
+  },
+  {
+    "name": "shift.Increase in number of paintings with these attributes?",
+    "imports": [
+      "data.Do available sources support this evaluation?"
+    ]
+  },
+  {
+    "name": "shift.Increase in number of artists making these works?",
+    "imports": [
+      "data.Do available sources support this evaluation?",
+      "shift.How many works must an artist make to be considered a tonalist?"
+    ]
+  },
+  {
+    "name": "shift.How many works must an artist make to be considered a tonalist?",
+    "imports": [
+      "data.Do available sources support this evaluation?"
+    ]
+  },
+  {
+    "name": "shift.If a shfit occurred, did it happen in the 1620s?",
+    "imports": []
+  },
+  {
+    "name": "causes.What are the potential causes?",
+    "imports": [
+      "causes.Economic",
+      "causes.Artistic"
+    ]
+  },
+  {
+    "name": "causes.Economic",
+    "imports": [
+      "causes.Increased pigment prices?",
+      "causes.New art production practices?",
+      "causes.New art purchasing practices?"
+    ]
+  },
+  {
+    "name": "causes.Increased pigment prices?",
+    "imports": [
+      "tonal.Thin paint application",
+      "tonal.Limited palette",
+      "causes.Consider artist inventories and market records",
+      "tonal.Cheap materials"
+    ]
+  },
+  {
+    "name": "causes.Consider artist inventories and market records",
+    "imports": [
+      "data.Do available sources support this evaluation?",
+      "shift.What constitutes a shift?"
+    ]
+  },
+  {
+    "name": "causes.New art production practices?",
+    "imports": [
+      "tonal.Thin paint application",
+      "tonal.Limited palette",
+      "causes.Consider artist inventories and market records",
+      "tonal.Cheap materials"
+    ]
+  },
+  {
+    "name": "causes.New art purchasing practices?",
+    "imports": [
+      "tonal.Thin paint application",
+      "tonal.Limited palette",
+      "tonal.Cheap materials",
+      "causes.Consider artist inventories and market records"
+    ]
+  },
+  {
+    "name": "causes.Artistic",
+    "imports": [
+      "causes.Consider artistic treatises"
+    ]
+  },
+  {
+    "name": "causes.Consider artistic treatises",
+    "imports": [
+      "data.Do available sources support this evaluation?",
+      "shift.What constitutes a shift?"
+    ]
+  }
+]

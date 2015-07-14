@@ -1,0 +1,138 @@
+[
+  {
+    "name": "data.Exhibitions",
+    "imports": [
+      "data.Entities",
+      "data.Variables",
+      "data.Dimensions",
+      "data.Connections",
+      "data.Keywords",
+      "data.Values",
+      "data.Process"
+    ]
+  },
+  {
+    "name": "data.Entities",
+    "imports": [
+      "data.Actors",
+      "data.Objects",
+      "data.Materials/Inscriptions"
+    ]
+  },
+  {
+    "name": "data.Actors",
+    "imports": [
+      "data.Gender",
+      "data.Nationality/Culture",
+      "data.Backgrounds"
+    ]
+  },
+  {
+    "name": "data.Objects",
+    "imports": [
+      "data.Typology",
+      "data.Materiality"
+    ]
+  },
+  {
+    "name": "data.Materials/Inscriptions",
+    "imports": []
+  },
+  {
+    "name": "data.Variables",
+    "imports": [
+      "data.Gender",
+      "data.Typology",
+      "data.Nationality/Culture",
+      "data.Materiality",
+      "data.Backgrounds"
+    ]
+  },
+  {
+    "name": "data.Gender",
+    "imports": []
+  },
+  {
+    "name": "data.Typology",
+    "imports": []
+  },
+  {
+    "name": "data.Nationality/Culture",
+    "imports": []
+  },
+  {
+    "name": "data.Materiality",
+    "imports": []
+  },
+  {
+    "name": "data.Backgrounds",
+    "imports": []
+  },
+  {
+    "name": "data.Dimensions",
+    "imports": [
+      "data.Places",
+      "data.Time"
+    ]
+  },
+  {
+    "name": "data.Places",
+    "imports": [
+      "data.Nationality/Culture"
+    ]
+  },
+  {
+    "name": "data.Time",
+    "imports": []
+  },
+  {
+    "name": "data.Connections",
+    "imports": []
+  },
+  {
+    "name": "data.Keywords",
+    "imports": []
+  },
+  {
+    "name": "data.Values",
+    "imports": [
+      "data.Economic",
+      "data.Cultural/Symbolic"
+    ]
+  },
+  {
+    "name": "data.Economic",
+    "imports": []
+  },
+  {
+    "name": "data.Cultural/Symbolic",
+    "imports": []
+  },
+  {
+    "name": "data.Process",
+    "imports": [
+      "data.Loans",
+      "data.Itinerary"
+    ]
+  },
+  {
+    "name": "data.Loans",
+    "imports": [
+      "data.Objects",
+      "data.Nationality/Culture",
+      "data.Places",
+      "data.Time"
+    ]
+  },
+  {
+    "name": "data.Itinerary",
+    "imports": [
+      "data.Places",
+      "data.Time"
+    ]
+  },
+  {
+    "name": "question.Exhibitions and the Market",
+    "imports": []
+  }
+]
