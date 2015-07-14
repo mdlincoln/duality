@@ -13,7 +13,7 @@ Indeed, Vroom's work has been characterized by one prominent historian of Dutch 
 This question is an ideal example of the interleaved, recursive nature of quantitative assumptions and arguments built into seemingly-qualitative research.
 Let's parse the question "Why did Dutch painters turn towards more tonal painting in the 1620s?" more closely.
 
-{% include network.html id="tonal" json="/assets/tonal.json" %}
+{% include network.html id="tonal" json="assets/tonal.json" %}
 
 1. What _is_ tonal painting? There are a variety of definitions: a painting with
 a restricted range of hues; with thinly-applied paint; simple and repetitive
