@@ -10,54 +10,54 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 -->
 <html>
 <head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-<style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+	<style>
 
-.node {
-	font: 300 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
-	fill: #bbb;
-}
+	.node {
+		font: 300 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+		fill: #bbb;
+	}
 
-.node:hover {
-	fill: #000;
-}
+	.node:hover {
+		fill: #000;
+	}
 
-.link {
-	stroke: steelblue;
-	stroke-opacity: .4;
-	fill: none;
-	pointer-events: none;
-}
+	.link {
+		stroke: steelblue;
+		stroke-opacity: .4;
+		fill: none;
+		pointer-events: none;
+	}
 
-.node:hover,
-.node--source,
-.node--target {
-	font-weight: 700;
-}
+	.node:hover,
+	.node--source,
+	.node--target {
+		font-weight: 700;
+	}
 
-.node--source {
-	fill: #2ca02c;
-}
+	.node--source {
+		fill: #2ca02c;
+	}
 
-.node--target {
-	fill: #d62728;
-}
+	.node--target {
+		fill: #d62728;
+	}
 
-.link--source,
-.link--target {
-	stroke-opacity: 1;
-	stroke-width: 2px;
-}
+	.link--source,
+	.link--target {
+		stroke-opacity: 1;
+		stroke-width: 2px;
+	}
 
-.link--source {
-	stroke: #d62728;
-}
+	.link--source {
+		stroke: #d62728;
+	}
 
-.link--target {
-	stroke: #2ca02c;
-}
+	.link--target {
+		stroke: #2ca02c;
+	}
 
-</style>
+	</style>
 
 	<title>Photon by HTML5 UP</title>
 	<meta charset="utf-8" />
@@ -99,68 +99,72 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 			<div class="row 150%">
 				<div class="6u 12u$(medium)">
 					<p>Matthew Lincoln<br/>
-					PhD Candidate<br/>
-					University of Maryland, College Park</p>
-					<ul class="actions fit">
-						<li><a href="#tonal" class="button scrolly">Tonal Painting</a></li>
-					</ul>
-				</div>
-				<div class="6u 12u$(medium)">
-					<p>Nuria Rodríguez Ortega<br/>
-						Professor<br/>
-					University of Málaga</p>
-					<ul class="actions fit">
-						<li><a href="#exhibitions" class="button scrolly">Exhibition Networks</a></li>
-					</ul>
-				</div>
-				<div class="6u 12u$(medium)">
+						PhD Candidate<br/>
+						University of Maryland, College Park</p>
+						<ul class="actions fit">
+							<li><a href="#tonal" class="button scrolly">Tonal Painting</a></li>
+						</ul>
+					</div>
+					<div class="6u 12u$(medium)">
+						<p>Nuria Rodríguez Ortega<br/>
+							Professor<br/>
+							University of Málaga</p>
+							<ul class="actions fit">
+								<li><a href="#exhibitions" class="button scrolly">Exhibition Networks</a></li>
+							</ul>
+						</div>
+						<div class="6u 12u$(medium)">
 
-				</div>
-				<div class="6u 12u$(medium)">
+						</div>
+						<div class="6u 12u$(medium)">
 
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="tonal" class="main style1">
-		<div class="container">
-			<div class="row 150%">
-				<div class="12u 12u$(medium)">
-					{% capture tonal %}{% include tonal.md %}{% endcapture %}
-					{{ tonal | markdownify }}
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="exhibitions" class="main style1">
-		<div class="container">
-			<div class="row 150%">
-				<div class="12u 12u$(medium)">
-					{% capture exhibitions %}{% include exhibitions.md %}{% endcapture %}
-					{{ exhibitions | markdownify }}
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Two -->
-	<section id="two" class="main style2">
-		<div class="container">
-			<div class="row 150%">
-					<header class="major">
-						<h2>Conclusion</h2>
-						</header>
-						{% include rhizome.html id="rhizome" %}
-						<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
-						<p>Blandit faucibus proin. Ac aliquam integer adipiscing enim non praesent vis commodo nunc phasellus cubilia ac risus accumsan. Accumsan blandit. Lobortis phasellus non lobortis dit varius mi varius accumsan lobortis. Blandit ante aliquam lacinia lorem lobortis semper morbi col faucibus vitae integer placerat accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing curae consequat feugiat etiam dolore.</p>
-						<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+
+			<section id="tonal" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="12u 12u$(medium)">
+							{% capture tonal %}{% include tonal.md %}{% endcapture %}
+							{{ tonal | markdownify }}
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="exhibitions" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="12u 12u$(medium)">
+							{% capture exhibitions %}{% include exhibitions.md %}{% endcapture %}
+							{{ exhibitions | markdownify }}
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Two -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Conclusion</h2>
+							</header>
+							{% capture conclusion %}{% include conclusion.md %}{% endcapture %}
+							{{ conclusion | markdownify }}
+						</div>
+						<div class="6u 12u$(medium) important(medium)">
+							<span class="image fit">
+								{% include rhizome.html id="rhizome" %}
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
 
 
-	</body>
-</html>
+		</body>
+		</html>
