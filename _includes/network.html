@@ -1,12 +1,10 @@
 <div id="{{ include.id }}">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <script>
-
 d3.json("{{ include.json }}", function(error, classes) {
 
-  var diameter = 1000,
+  var diameter = 900,
       radius = diameter / 2,
-      innerRadius = radius - 120;
+      innerRadius = radius - 220;
 
   var cluster = d3.layout.cluster()
       .size([360, innerRadius])
