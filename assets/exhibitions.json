@@ -5,7 +5,6 @@
       "data.Entities",
       "data.Variables",
       "data.Dimensions",
-      "data.Connections",
       "data.Keywords",
       "data.Values",
       "data.Process"
@@ -86,10 +85,6 @@
     "imports": []
   },
   {
-    "name": "data.Connections",
-    "imports": []
-  },
-  {
     "name": "data.Keywords",
     "imports": []
   },
@@ -132,7 +127,112 @@
     ]
   },
   {
-    "name": "question.Exhibitions and the Market",
-    "imports": []
+    "name": "question.Exhibitions and Market Influence",
+    "imports": [
+      "question.Which objects/artists?",
+      "question.How many objects/artists?",
+      "question.Which intermediation?",
+      "question.Economic value: how much money?",
+      "data.Exhibitions",
+      "question.What styles are preferred?",
+      "question.What objects are preferred?",
+      "question.What artists are preferred?"
+    ]
+  },
+  {
+    "name": "question.What styles are preferred?",
+    "imports": [
+      "data.Typology",
+      "data.Nationality/Culture"
+    ]
+  },
+  {
+    "name": "question.What objects are preferred?",
+    "imports": [
+      "data.Nationality/Culture",
+      "data.Objects",
+      "data.Materiality"
+    ]
+  },
+  {
+    "name": "question.What artists are preferred?",
+    "imports": [
+      "data.Actors",
+      "data.Gender",
+      "data.Nationality/Culture"
+    ]
+  },
+  {
+    "name": "question.Which objects/artists?",
+    "imports": [
+      "data.Actors",
+      "data.Objects"
+    ]
+  },
+  {
+    "name": "question.How many objects/artists?",
+    "imports": [
+      "data.Objects"
+    ]
+  },
+  {
+    "name": "question.Which intermediation?",
+    "imports": [
+      "question.Auction houses",
+      "question.Galleries",
+      "question.Private transactions"
+    ]
+  },
+  {
+    "name": "question.Auction houses",
+    "imports": [
+      "data.Actors",
+      "data.Time",
+      "data.Objects"
+    ]
+  },
+  {
+    "name": "question.Galleries",
+    "imports": [
+      "data.Actors",
+      "data.Time",
+      "data.Objects"
+    ]
+  },
+  {
+    "name": "question.Private transactions",
+    "imports": [
+      "data.Actors",
+      "data.Time",
+      "data.Objects"
+    ]
+  },
+  {
+    "name": "question.Economic value: how much money?",
+    "imports": [
+      "question.How many transactions?"
+    ]
+  },
+  {
+    "name": "question.How many transactions?",
+    "imports": [
+      "data.Actors",
+      "question.Where was the transaction?",
+      "data.Time"
+    ]
+  },
+  {
+    "name": "question.Where was the transaction?",
+    "imports": [
+      "data.Places",
+      "data.Nationality/Culture",
+      "question.Which institutions involved?"
+    ]
+  },
+  {
+    "name": "question.Which institutions involved?",
+    "imports": [
+      "data.Actors"
+    ]
   }
 ]
