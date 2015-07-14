@@ -4,7 +4,7 @@ d3.json("{{ include.json }}", function(error, classes) {
 
   var diameter = 900,
       radius = diameter / 2,
-      innerRadius = radius - 220;
+      innerRadius = radius - 120;
 
   var cluster = d3.layout.cluster()
       .size([360, innerRadius])
