@@ -122,8 +122,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 				<div class="container">
 					<div class="row 150%">
 						<div class="12u 12u$(medium)">
-							{% capture tonal %}{% include tonal.md %}{% endcapture %}
-							{{ tonal | markdownify }}
+							{% include tonal.html %}
 						</div>
 					</div>
 				</div>
@@ -131,12 +130,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 			<section id="exhibitions" class="main style1">
 				<div class="container">
-					<div class="row 150%">
-						<div class="12u 12u$(medium)">
-							{% capture exhibitions %}{% include exhibitions.md %}{% endcapture %}
-							{{ exhibitions | markdownify }}
-						</div>
-					</div>
+					{% include exhibitions.html %}
 				</div>
 			</section>
 
