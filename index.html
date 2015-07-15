@@ -83,12 +83,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 	<section id="intro" class="main style1">
 		<div class="container">
-			<div class="row 150%">
-				<div class="12u 12u$(medium)">
-					{% capture intro %}{% include intro.md %}{% endcapture %}
-					{{ intro | markdownify }}
-				</div>
-			</div>
+			{% include intro.html %}
 		</div>
 	</section>
 
