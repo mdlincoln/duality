@@ -1,13 +1,22 @@
 [
   {
-    "name": "core.HOW DO EXHIBITIONS AND THE ART MARKET INFLUENCE EACH OTHER?",
+    "name": "prime.HOW DO EXHIBITIONS AND THE ART MARKET INFLUENCE EACH OTHER?",
     "imports": [
-      "core.What are components of the art market?",
-      "core.What are components of exhibitions?",
+      "core.What components do the art market and exhibitions share?",
       "measures.What are the parameters of influence?",
       "measures.What motivates influence?",
       "core.Which sources are available?"
     ]
+  },
+  {
+    "name": "core.Which sources are available?",
+    "imports": [
+      "core.What is the level of uncertainty/ambiguity?"
+    ]
+  },
+  {
+    "name": "core.What is the level of uncertainty/ambiguity?",
+    "imports": []
   },
   {
     "name": "actors.Actors",
@@ -162,28 +171,7 @@
     ]
   },
   {
-    "name": "core.Which sources are available?",
-    "imports": [
-      "core.What is the level of uncertainty/ambiguity?"
-    ]
-  },
-  {
-    "name": "core.What is the level of uncertainty/ambiguity?",
-    "imports": []
-  },
-  {
-    "name": "core.What are components of the art market?",
-    "imports": [
-      "actors.Actors",
-      "data.Places",
-      "data.Time",
-      "data.Values",
-      "data.Dimensions",
-      "data.Process"
-    ]
-  },
-  {
-    "name": "core.What are components of exhibitions?",
+    "name": "core.What components do the art market and exhibitions share?",
     "imports": [
       "actors.Actors",
       "data.Places",
