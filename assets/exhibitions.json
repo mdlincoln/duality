@@ -1,36 +1,57 @@
 [
   {
-    "name": "data.Exhibitions",
+    "name": "actors.Exhibitions",
     "imports": [
-      "data.Entities",
-      "data.Variables",
-      "data.Dimensions",
+      "actors.Actors",
       "data.Keywords",
       "data.Values",
-      "data.Process"
+      "data.Process",
+      "data.Dimensions",
+      "data.Variables"
     ]
   },
   {
-    "name": "data.Entities",
+    "name": "actors.Actors",
     "imports": [
-      "data.Actors",
-      "data.Objects",
-      "data.Materials/Inscriptions"
+      "actors.Agents",
+      "actors.Objects"
     ]
   },
   {
-    "name": "data.Actors",
+    "name": "actors.Agents",
+    "imports": [
+      "actors.Individuals",
+      "actors.Institutions"
+    ]
+  },
+  {
+    "name": "actors.Individuals",
     "imports": [
       "data.Gender",
       "data.Nationality/Culture",
-      "data.Backgrounds"
+      "data.Backgrounds",
+      "data.Values"
     ]
   },
   {
-    "name": "data.Objects",
+    "name": "actors.Institutions",
+    "imports": [
+      "data.Nationality/Culture",
+      "data.Backgrounds",
+      "data.Places",
+      "data.Loans",
+      "data.Values"
+    ]
+  },
+  {
+    "name": "actors.Objects",
     "imports": [
       "data.Typology",
-      "data.Materiality"
+      "data.Materiality",
+      "data.Backgrounds",
+      "data.Nationality/Culture",
+      "data.Materials/Inscriptions",
+      "data.Values"
     ]
   },
   {
@@ -107,13 +128,18 @@
     "name": "data.Process",
     "imports": [
       "data.Loans",
-      "data.Itinerary"
+      "data.Itinerary",
+      "data.Transactions"
     ]
+  },
+  {
+    "name": "data.Transactions",
+    "imports": []
   },
   {
     "name": "data.Loans",
     "imports": [
-      "data.Objects",
+      "actors.Objects",
       "data.Nationality/Culture",
       "data.Places",
       "data.Time"
@@ -127,114 +153,131 @@
     ]
   },
   {
-    "name": "question.Exhibitions and Market Influence",
+    "name": "core.How do exhibitions and the art market influence each other?",
     "imports": [
-      "question.Which objects/artists?",
-      "question.How many objects/artists?",
-      "question.Which intermediation?",
-      "question.Economic value: how much money?",
-      "data.Exhibitions",
-      "question.What styles are preferred?",
-      "question.What objects are preferred?",
-      "question.What artists are preferred?"
+      "core.What are components of the art market?",
+      "core.What are components of exhibitions?",
+      "measures.How do we define influence?",
+      "measures.What motivates influence?",
+      "data.Which sources are available?"
     ]
   },
   {
-    "name": "question.What styles are preferred?",
+    "name": "data.Which sources are available?",
+    "imports": [
+      "data.What is the level of uncertainty/ambiguity?"
+    ]
+  },
+  {
+    "name": "data.What is the level of uncertainty/ambiguity?",
+    "imports": []
+  },
+  {
+    "name": "core.What are components of the art market?",
+    "imports": [
+      "actors.Actors",
+      "data.Places",
+      "data.Time",
+      "data.Values"
+    ]
+  },
+  {
+    "name": "core.What are components of exhibitions?",
+    "imports": [
+      "actors.Actors",
+      "data.Places",
+      "data.Time",
+      "data.Values"
+    ]
+  },
+  {
+    "name": "measures.How do we define influence?",
+    "imports": [
+      "measures.High co-occurrence of artists",
+      "measures.High co-occurrence of objects",
+      "measures.High co-occurrence of institutions",
+      "measures.Related types of objects involved",
+      "measures.Related periods/movements involved"
+    ]
+  },
+  {
+    "name": "measures.High co-occurrence of artists",
+    "imports": [
+      "actors.Individuals",
+      "actors.Exhibitions"
+    ]
+  },
+  {
+    "name": "measures.High co-occurrence of objects",
+    "imports": [
+      "actors.Objects"
+    ]
+  },
+  {
+    "name": "measures.High co-occurrence of institutions",
+    "imports": [
+      "actors.Institutions"
+    ]
+  },
+  {
+    "name": "measures.Related types of objects involved",
     "imports": [
       "data.Typology",
-      "data.Nationality/Culture"
-    ]
-  },
-  {
-    "name": "question.What objects are preferred?",
-    "imports": [
-      "data.Nationality/Culture",
-      "data.Objects",
       "data.Materiality"
     ]
   },
   {
-    "name": "question.What artists are preferred?",
+    "name": "measures.Related periods/movements involved",
     "imports": [
-      "data.Actors",
-      "data.Gender",
-      "data.Nationality/Culture"
-    ]
-  },
-  {
-    "name": "question.Which objects/artists?",
-    "imports": [
-      "data.Actors",
-      "data.Objects"
-    ]
-  },
-  {
-    "name": "question.How many objects/artists?",
-    "imports": [
-      "data.Objects"
-    ]
-  },
-  {
-    "name": "question.Which intermediation?",
-    "imports": [
-      "question.Auction houses",
-      "question.Galleries",
-      "question.Private transactions",
-      "data.Process",
-      "data.Itinerary"
-    ]
-  },
-  {
-    "name": "question.Auction houses",
-    "imports": [
-      "data.Actors",
-      "data.Time",
-      "data.Objects"
-    ]
-  },
-  {
-    "name": "question.Galleries",
-    "imports": [
-      "data.Actors",
-      "data.Time",
-      "data.Objects"
-    ]
-  },
-  {
-    "name": "question.Private transactions",
-    "imports": [
-      "data.Actors",
-      "data.Time",
-      "data.Objects"
-    ]
-  },
-  {
-    "name": "question.Economic value: how much money?",
-    "imports": [
-      "question.How many transactions?"
-    ]
-  },
-  {
-    "name": "question.How many transactions?",
-    "imports": [
-      "data.Actors",
-      "question.Where was the transaction?",
-      "data.Time"
-    ]
-  },
-  {
-    "name": "question.Where was the transaction?",
-    "imports": [
-      "data.Places",
       "data.Nationality/Culture",
-      "question.Which institutions involved?"
+      "data.Backgrounds",
+      "data.Values"
     ]
   },
   {
-    "name": "question.Which institutions involved?",
+    "name": "measures.What motivates influence?",
     "imports": [
-      "data.Actors"
+      "influence.Artistic changes",
+      "influence.Economic changes",
+      "influence.Politics/Ideology",
+      "influence.Collecting interests",
+      "influence.Institutional legitimation"
+    ]
+  },
+  {
+    "name": "influence.Artistic changes",
+    "imports": [
+      "data.Typology",
+      "data.Materiality",
+      "data.Backgrounds",
+      "data.Nationality/Culture",
+      "data.Materials/Inscriptions",
+      "data.Values"
+    ]
+  },
+  {
+    "name": "influence.Economic changes",
+    "imports": [
+      "data.Values",
+      "data.Transactions"
+    ]
+  },
+  {
+    "name": "influence.Politics/Ideology",
+    "imports": [
+      "actors.Actors"
+    ]
+  },
+  {
+    "name": "influence.Collecting interests",
+    "imports": [
+      "actors.Actors"
+    ]
+  },
+  {
+    "name": "influence.Institutional legitimation",
+    "imports": [
+      "actors.Institutions"
     ]
   }
 ]
