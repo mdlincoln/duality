@@ -1,5 +1,15 @@
 [
   {
+    "name": "core.HOW DO EXHIBITIONS AND THE ART MARKET INFLUENCE EACH OTHER?",
+    "imports": [
+      "core.What are components of the art market?",
+      "core.What are components of exhibitions?",
+      "measures.How do we define influence?",
+      "measures.What motivates influence?",
+      "data.Which sources are available?"
+    ]
+  },
+  {
     "name": "actors.Exhibitions",
     "imports": [
       "actors.Actors",
@@ -150,16 +160,6 @@
     "imports": [
       "data.Places",
       "data.Time"
-    ]
-  },
-  {
-    "name": "core.How do exhibitions and the art market influence each other?",
-    "imports": [
-      "core.What are components of the art market?",
-      "core.What are components of exhibitions?",
-      "measures.How do we define influence?",
-      "measures.What motivates influence?",
-      "data.Which sources are available?"
     ]
   },
   {
