@@ -135,22 +135,31 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 			</section>
 
 			<!-- Two -->
-			<section id="two" class="main style2">
+			<section id="conclusion" class="main style2">
 				<div class="container">
 					<div class="row 150%">
-						<div class="6u 12u$(medium)">
-							<header class="major">
-								<h2>Conclusion</h2>
-							</header>
-							{% capture conclusion %}{% include conclusion.md %}{% endcapture %}
+						<header class="major">
+							<h2>Conclusion</h2>
+						</header>
+						<div class="12u 12u$(medium)">
+						{% capture conclusion %}{% include conclusion.md %}{% endcapture %}
 							{{ conclusion | markdownify }}
-						</div>
-						<div class="6u 12u$(medium) important(medium)">
-							<span class="image fit">
-								{% include rhizome.html id="rhizome" %}
-							</span>
-						</div>
 					</div>
+					<!-- <div class="6u 12u$(medium) important(medium)">
+						<span class="image fit">
+							{% include rhizome.html id="rhizome" %}
+						</span>
+					</div> -->
+				</div>
+			</section>
+
+			<section id="footer">
+				<div class="container">
+					<header class="major">
+						<h2>Visual Metaphors: a colophon</h2>
+					</header>
+					{% capture metaphors %}{% include metaphors.md %}{% endcapture %}
+					{{ metaphors | markdownify }}
 				</div>
 			</section>
 
