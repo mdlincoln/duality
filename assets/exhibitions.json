@@ -8,18 +8,7 @@
       "measures.What motivates influence?",
       "data.Which sources are available?"
     ]
-  },
-  {
-    "name": "actors.Exhibitions",
-    "imports": [
-      "actors.Actors",
-      "data.Keywords",
-      "data.Values",
-      "data.Process",
-      "data.Dimensions",
-      "data.Variables"
-    ]
-  },
+  }
   {
     "name": "actors.Actors",
     "imports": [
@@ -203,8 +192,7 @@
   {
     "name": "measures.High co-occurrence of artists",
     "imports": [
-      "actors.Individuals",
-      "actors.Exhibitions"
+      "actors.Individuals"
     ]
   },
   {
