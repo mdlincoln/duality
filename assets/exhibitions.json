@@ -4,16 +4,24 @@
     "imports": [
       "core.What are components of the art market?",
       "core.What are components of exhibitions?",
-      "measures.How do we define influence?",
+      "measures.What are the parameters of influence?",
       "measures.What motivates influence?",
-      "data.Which sources are available?"
+      "core.Which sources are available?"
     ]
   },
   {
     "name": "actors.Actors",
     "imports": [
       "actors.Agents",
-      "actors.Objects"
+      "actors.Objects",
+      "actors.Materials/Inscriptions",
+      "actors.Topic"
+    ]
+  },
+  {
+    "name": "actors.Topic",
+    "imports": [
+      "actors.Keywords"
     ]
   },
   {
@@ -49,13 +57,15 @@
       "data.Materiality",
       "data.Backgrounds",
       "data.Nationality/Culture",
-      "data.Materials/Inscriptions",
+      "actors.Materials/Inscriptions",
       "data.Values"
     ]
   },
   {
-    "name": "data.Materials/Inscriptions",
-    "imports": []
+    "name": "actors.Materials/Inscriptions",
+    "imports": [
+      "actors.Keywords"
+    ]
   },
   {
     "name": "data.Variables",
@@ -105,7 +115,7 @@
     "imports": []
   },
   {
-    "name": "data.Keywords",
+    "name": "actors.Keywords",
     "imports": []
   },
   {
@@ -152,13 +162,13 @@
     ]
   },
   {
-    "name": "data.Which sources are available?",
+    "name": "core.Which sources are available?",
     "imports": [
-      "data.What is the level of uncertainty/ambiguity?"
+      "core.What is the level of uncertainty/ambiguity?"
     ]
   },
   {
-    "name": "data.What is the level of uncertainty/ambiguity?",
+    "name": "core.What is the level of uncertainty/ambiguity?",
     "imports": []
   },
   {
@@ -167,7 +177,9 @@
       "actors.Actors",
       "data.Places",
       "data.Time",
-      "data.Values"
+      "data.Values",
+      "data.Dimensions",
+      "data.Process"
     ]
   },
   {
@@ -176,17 +188,83 @@
       "actors.Actors",
       "data.Places",
       "data.Time",
+      "data.Values",
+      "data.Dimensions",
+      "data.Process"
+    ]
+  },
+  {
+    "name": "influence.Artistic changes",
+    "imports": [
+      "data.Typology",
+      "data.Materiality",
+      "data.Backgrounds",
+      "data.Nationality/Culture",
+      "actors.Materials/Inscriptions",
       "data.Values"
     ]
   },
   {
-    "name": "measures.How do we define influence?",
+    "name": "influence.Economic changes",
+    "imports": [
+      "data.Values",
+      "data.Transactions"
+    ]
+  },
+  {
+    "name": "influence.Politics/Ideology",
+    "imports": [
+      "actors.Actors",
+      "actors.Materials/Inscriptions",
+      "measures.Co-occurrence of keywords"
+    ]
+  },
+  {
+    "name": "influence.Collecting interests",
+    "imports": [
+      "actors.Actors",
+      "data.Economic",
+      "data.Cultural/Symbolic",
+      "data.Nationality/Culture"
+    ]
+  },
+  {
+    "name": "influence.Institutional legitimation",
+    "imports": [
+      "actors.Institutions"
+    ]
+  },
+  {
+    "name": "measures.What are the parameters of influence?",
     "imports": [
       "measures.High co-occurrence of artists",
       "measures.High co-occurrence of objects",
       "measures.High co-occurrence of institutions",
       "measures.Related types of objects involved",
-      "measures.Related periods/movements involved"
+      "measures.Related periods/movements involved",
+      "measures.Changing prices",
+      "measures.Spatial distribution of co-occurrences",
+      "measures.Co-occurrence of keywords"
+    ]
+  },
+  {
+    "name": "measures.Spatial distribution of co-occurrences",
+    "imports": [
+      "data.Places",
+      "data.Time"
+    ]
+  },
+  {
+    "name": "measures.Co-occurrence of keywords",
+    "imports": [
+      "actors.Materials/Inscriptions",
+      "actors.Keywords"
+    ]
+  },
+  {
+    "name": "measures.Changing prices",
+    "imports": [
+      "data.Values"
     ]
   },
   {
@@ -230,42 +308,6 @@
       "influence.Politics/Ideology",
       "influence.Collecting interests",
       "influence.Institutional legitimation"
-    ]
-  },
-  {
-    "name": "influence.Artistic changes",
-    "imports": [
-      "data.Typology",
-      "data.Materiality",
-      "data.Backgrounds",
-      "data.Nationality/Culture",
-      "data.Materials/Inscriptions",
-      "data.Values"
-    ]
-  },
-  {
-    "name": "influence.Economic changes",
-    "imports": [
-      "data.Values",
-      "data.Transactions"
-    ]
-  },
-  {
-    "name": "influence.Politics/Ideology",
-    "imports": [
-      "actors.Actors"
-    ]
-  },
-  {
-    "name": "influence.Collecting interests",
-    "imports": [
-      "actors.Actors"
-    ]
-  },
-  {
-    "name": "influence.Institutional legitimation",
-    "imports": [
-      "actors.Institutions"
     ]
   }
 ]
