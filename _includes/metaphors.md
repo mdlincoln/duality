@@ -13,3 +13,5 @@ In the process of developing this provocation, we continually returned to a seri
 _This project was developed as part of the 2015 Harvard MetaLab workshop ["Beautiful Data II"](http://beautifuldata.metalab.harvard.edu/), supported by the Getty Foundation._
 
 _This work is made available under a [CC-BY-4.0 license.](http://creativecommons.org/licenses/by/4.0/)_
+
+_[Website code is available on GitHub](https://github.com/mdlincoln/duality)_
