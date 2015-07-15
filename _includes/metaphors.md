@@ -9,3 +9,5 @@ In the process of developing this provocation, we continually returned to a seri
 - Black hole
 - Network
 - Light as particles and waves
+
+_This project was developed as part of the 2015 Harvard MetaLab workshop ["Beautiful Data II"](http://beautifuldata.metalab.harvard.edu/), supported by the Getty Foundation._

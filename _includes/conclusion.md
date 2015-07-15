@@ -1,5 +1,3 @@
-### Reusable ideas
-
 - The model is an argument for how you believe the world (or one small part of it - your object of research) works.
 - What are the dimensions/features/characteristics of this model, in all its multiplicity?
 - In what ways can you represent these dimensions as data?
